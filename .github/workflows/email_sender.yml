@@ -1,10 +1,10 @@
 name: "send_email_Afetr Workflow"
 on:
-    workflow_dispatcher
+    workflow_dispatch
 jobs:
     send_email:
         runs-on: ubuntu-latest
-        setps:
+        steps:
             - name: "Checkout code"
               uses: actions/checkout@v2
             - name: "Setup the code"
